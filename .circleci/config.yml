@@ -17,14 +17,4 @@ jobs: # a collection of steps
 
       - checkout
 
-
-
-#       - run:
-
-#           name: install npm
-
-#           command: npm install 
-
-      
-
       - run: bash <(curl -s https://scripts.scantist.com/staging/ci-circle-jar.sh)
