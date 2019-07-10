@@ -1,4 +1,3 @@
-
 version: 2 # use CircleCI 2.0
 
 jobs: # a collection of steps
@@ -16,5 +15,15 @@ jobs: # a collection of steps
     steps: # a collection of executable commands 
 
       - checkout
+
+
+
+      - run:
+
+          name: install npm
+
+          command: npm install 
+
+      
 
       - run: bash <(curl -s https://scripts.scantist.com/staging/ci-circle-jar.sh)
